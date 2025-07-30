@@ -1280,6 +1280,7 @@ out_susfs_try_umount_all:
 	// try umount lsposed dex2oat bins
 	ksu_try_umount("/apex/com.android.art/bin/dex2oat64", false, MNT_DETACH);
 	ksu_try_umount("/apex/com.android.art/bin/dex2oat32", false, MNT_DETACH);
+#endif
 
 	return 0;
 }
