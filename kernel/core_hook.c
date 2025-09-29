@@ -1264,6 +1264,7 @@ do_umount:
 	// try umount lsposed dex2oat bins
 	try_umount("/apex/com.android.art/bin/dex2oat64", false, MNT_DETACH);
 	try_umount("/apex/com.android.art/bin/dex2oat32", false, MNT_DETACH);
+#endif
 
 	return 0;
 }
